@@ -50,6 +50,13 @@ namespace Wk3Ex2
             multiplication = secondNumber - firstNumber;
             division = secondNumber - firstNumber;
 
+            //
+            if (addition)
+            {
+                Console.WriteLine($"The result of addition is : {addition}");
+                Console.WriteLine($"Here is the result: {addition}");
+            }
+
 
 
         }
