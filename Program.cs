@@ -15,10 +15,6 @@ namespace Wk3Ex2
             int firstNumber = 0;
             int secondNumber = 0;
             int choice = 0;
-            int addition = 1;
-            int subtraction = 2;
-            int multiplication = 3;
-            int division = 4;
 
             //Title for the calculator
             Console.WriteLine("CALCULATOR APPLICATION");
@@ -44,21 +40,25 @@ namespace Wk3Ex2
             //user inputs their choice of math calculation
             choice = Convert.ToInt32(Console.ReadLine());
 
-            //
-            addition = firstNumber + secondNumber;
-            subtraction = secondNumber - firstNumber;
-            multiplication = secondNumber - firstNumber;
-            division = secondNumber - firstNumber;
-
-            //
-            if (addition)
+            switch (choice)
             {
-                Console.WriteLine($"The result of addition is : {addition}");
-                Console.WriteLine($"Here is the result: {addition}");
+                case 1:
+                    Console.WriteLine($"The result of Addition is:  is: {firstNumber + secondNumber}");
+                    break;
+                case 2:
+                    Console.WriteLine($"The result of Subtraction is: {secondNumber - firstNumber}");
+                    break;
+                case 3:
+                    Console.WriteLine($"The result of Multiplication is: {secondNumber * firstNumber}");
+                    break;
+                case 4:
+                    Console.WriteLine($"The result of Division is :{secondNumber / firstNumber}");
+                    break;
+
+                default: 
+                    Console.WriteLine("Invalid Choice please us the numbers 1 - 4 .");
+                    break;   
             }
-
-
-
         }
     }
 }
