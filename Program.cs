@@ -42,19 +42,23 @@ namespace Wk3Ex2
 
             switch (choice)
             {
+                //this input shows a result of addition
                 case 1:
-                    Console.WriteLine($"The result of Addition is:  is: {firstNumber + secondNumber}");
+                    Console.WriteLine($"The result of Addition is: {firstNumber + secondNumber}");
                     break;
+                //this input shows a result of subtraction
                 case 2:
                     Console.WriteLine($"The result of Subtraction is: {secondNumber - firstNumber}");
                     break;
+                //this input shows a result of multiplication
                 case 3:
                     Console.WriteLine($"The result of Multiplication is: {secondNumber * firstNumber}");
                     break;
+                //this input shows a result of division
                 case 4:
                     Console.WriteLine($"The result of Division is :{secondNumber / firstNumber}");
                     break;
-
+                //outputs a result if a number wasn't 1 - 4
                 default: 
                     Console.WriteLine("Invalid Choice please us the numbers 1 - 4 .");
                     break;   
